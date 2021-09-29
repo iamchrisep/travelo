@@ -1,0 +1,30 @@
+.noscript {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: 'Proxima Nova Alt', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    &__advice {
+        font-family: 'Proxima Nova Alt', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25em;
+        text-align: center;
+        margin: 0.75em 0 0 0;
+    }
+}

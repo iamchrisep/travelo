@@ -1,0 +1,12 @@
+// =============================================================================
+// Use the 7-1 pattern! https://sass-guidelin.es/#the-7-1-pattern
+// =============================================================================
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/normalize";
+@import "base/typography";
+
+@import "layout/layout";
+@import "layout/nosript";

@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FunctionComponent } from 'react';
+import { withNaming } from '@bem-react/classname';
+import classNames from 'classnames';
+import bemPreset from './utils/bemPreset';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: FunctionComponent = () => {
+    const cn = withNaming(bemPreset)('app');
+    const styleSheet = classNames(
+        cn(),
+    );
+    return (
+        <div className={styleSheet}>
+            <header className={cn('header')}>
+                Header
+            </header>
+            <main className={cn('main')}>
+                Main
+            </main>
+        </div>
+    );
+};
 
 export default App;
