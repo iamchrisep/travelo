@@ -431,4 +431,20 @@ body {
   margin: 0.75em 0 0 0;
 }
 
+.navigation__list {
+  list-style: none;
+}
+.navigation__item {
+  color: #1C4961;
+  font-size: 1.375rem;
+  line-height: 1.875em;
+  letter-spacing: -0.0525em;
+  font-weight: 400;
+  opacity: 0.75;
+}
+.navigation__item.active {
+  font-weight: 600;
+  opacity: 1;
+}
+
 /*# sourceMappingURL=main.css.map */

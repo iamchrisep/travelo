@@ -1,0 +1,19 @@
+.navigation {
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        color: $text-quaternary;
+        font-size: 1.375rem;
+        line-height: 1.875em;
+        letter-spacing: -0.0525em;
+        font-weight: 400;
+        opacity: 0.75;
+
+        &.active {
+            font-weight: 600;
+            opacity: 1;
+        }
+    }
+}
