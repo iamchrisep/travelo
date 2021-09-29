@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/travelo/static/js/main.14159c1b.chunk.js",
-    "main.js.map": "/travelo/static/js/main.14159c1b.chunk.js.map",
+    "main.js": "/travelo/static/js/main.d327b083.chunk.js",
+    "main.js.map": "/travelo/static/js/main.d327b083.chunk.js.map",
     "runtime-main.js": "/travelo/static/js/runtime-main.be9d0ec9.js",
     "runtime-main.js.map": "/travelo/static/js/runtime-main.be9d0ec9.js.map",
     "static/js/2.4f5ffc96.chunk.js": "/travelo/static/js/2.4f5ffc96.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.be9d0ec9.js",
     "static/js/2.4f5ffc96.chunk.js",
-    "static/js/main.14159c1b.chunk.js"
+    "static/js/main.d327b083.chunk.js"
   ]
 }
