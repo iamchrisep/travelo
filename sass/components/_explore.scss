@@ -1,0 +1,30 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9.625rem;
+    background: url("../images/overlay.svg") center center no-repeat, url("../images/background.png") center center no-repeat;
+    background-size: cover;
+    border-radius: 0.875rem;
+
+    &__title {
+        margin: 0 0 0.75rem 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 3.8125rem;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__description {
+        max-width: 522px;
+        margin-bottom: 2.4375rem;
+        font-size: 1.375rem;
+        line-height: 2.0625rem;
+        color: $white;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
