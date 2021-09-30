@@ -1,23 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import { withNaming } from '@bem-react/classname';
-import classNames from 'classnames';
-import bemPreset from './utils/bemPreset';
+import Header from './components/Header';
+import Main from './components/Main';
 
-const App: FunctionComponent = () => {
-    const cn = withNaming(bemPreset)('app');
-    const styleSheet = classNames(
-        cn(),
-    );
-    return (
-        <div className={styleSheet}>
-            <header className={cn('header')}>
-                Header
-            </header>
-            <main className={cn('main')}>
-                Main
-            </main>
-        </div>
-    );
-};
+const App: FunctionComponent = () => (
+    <>
+        <Header />
+        <Main />
+    </>
+);
 
 export default App;

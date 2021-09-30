@@ -1,0 +1,57 @@
+/* Transition delay */
+$transition-delay: 250ms;
+
+/* Button class */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    outline: none;
+    transition: $transition-delay ease;
+
+    &_theme {
+        &_primary {
+            background: $brand-primary;
+            color: $white;
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.95;
+            }
+        }
+
+        &_transparent {
+            background: transparent;
+            color: $text-primary;
+
+            &:hover {
+                color: $text-secondary;
+            }
+        }
+    }
+
+    &_size {
+        &_small {
+            padding: 0.375rem 1.25rem;
+            font-size: 1.1875rem;
+            letter-spacing: -0.045rem;
+            border-radius: 1rem;
+        }
+
+        &_large {
+            padding: 1.25rem 2.25rem;
+            font-size: 1.3125rem;
+            border-radius: 0.625rem;
+        }
+    }
+
+    &_disabled {
+        cursor: not-allowed;
+    }
+}
