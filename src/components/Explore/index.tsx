@@ -5,10 +5,18 @@ import bemPreset from '../../utils/bemPreset';
 import Search from '../Search';
 
 const Explore: FunctionComponent = () => {
+    /**
+     * The BEM class name generator.
+     */
     const cn = withNaming(bemPreset)('explore');
+
+    /**
+     * The component stylesheet.
+     */
     const styleSheet = classNames(
         cn(),
     );
+
     return (
         <div className={styleSheet}>
             <h1 className={cn('title')}>Travel to explore</h1>

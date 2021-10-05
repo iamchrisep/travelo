@@ -6,15 +6,25 @@ import Navigation from '../Navigation';
 import Button from '../Button';
 
 const Header: FunctionComponent = () => {
+    /**
+     * The BEM class name generator.
+     */
     const cn = withNaming(bemPreset)('header');
+
+    /**
+     * The component stylesheet.
+     */
     const styleSheet = classNames(
         cn(),
     );
+
     return (
         <header className={styleSheet}>
-            <img className={cn('logo')} src="/travelo/images/logo.png" alt="logo" />
+            <a href="/travelo" className={cn('link')}>
+                <img className={cn('logo')} src="/travelo/images/logo.png" alt="logo" />
+            </a>
             <Navigation />
-            <Button theme="primary" size="small">Connect</Button>
+            <Button theme="primary" size="small" type="button">Connect</Button>
         </header>
     );
 };

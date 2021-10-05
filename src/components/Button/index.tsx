@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 import { cn } from '@bem-react/classname';
@@ -6,6 +7,7 @@ import { IButtonProps as Props } from './types';
 const Button: FunctionComponent<Props> = ({
     theme,
     size,
+    type,
     disabled,
     className,
     children,
@@ -29,6 +31,7 @@ const Button: FunctionComponent<Props> = ({
         cn('button')({
             theme,
             size,
+            type,
             disabled,
         }),
         className,
@@ -36,7 +39,7 @@ const Button: FunctionComponent<Props> = ({
 
     return (
         <button
-            type="button"
+            type={type}
             disabled={disabled}
             onClick={handleClick}
             className={styleSheet}

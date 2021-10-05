@@ -6,10 +6,18 @@ import Explore from '../Explore';
 import Benefits from '../Benefits';
 
 const Main: FunctionComponent = () => {
+    /**
+     * The BEM class name generator.
+     */
     const cn = withNaming(bemPreset)('main');
+
+    /**
+     * The component stylesheet.
+     */
     const styleSheet = classNames(
         cn(),
     );
+
     return (
         <main className={styleSheet}>
             <Explore />

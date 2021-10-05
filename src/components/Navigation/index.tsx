@@ -4,10 +4,18 @@ import classNames from 'classnames';
 import bemPreset from '../../utils/bemPreset';
 
 const Navigation: FunctionComponent = () => {
+    /**
+     * The BEM class name generator.
+     */
     const cn = withNaming(bemPreset)('navigation');
+
+    /**
+     * The component stylesheet.
+     */
     const styleSheet = classNames(
         cn(),
     );
+
     return (
         <nav className={styleSheet}>
             <ul className={cn('list')}>

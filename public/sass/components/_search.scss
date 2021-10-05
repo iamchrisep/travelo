@@ -1,7 +1,7 @@
 .search {
     display: flex;
-    padding: 0.8125rem;
-    border-radius: 0.625rem;
+    padding: 13px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(30px) brightness(1.5);
     backdrop-filter: blur(30px) brightness(1.5);
@@ -20,23 +20,24 @@
         align-self: stretch;
         border-left: 0.5px solid $border;
         border-right: 0.5px solid $border;
-        padding-left: 2rem;
+        padding-left: 32px;
+        position: relative;
 
         &:first-child {
             border: none;
-            padding-left: 0.75rem;
-            padding-right: 2rem;
+            padding-left: 12px;
+            padding-right: 32px;
         }
 
         &:last-child {
             border: none;
-            padding-left: 2rem;
+            padding-left: 32px;
         }
     }
 
     &__title {
-        letter-spacing: -0.0475rem;
-        font-size: 1.25rem;
+        letter-spacing: -0.76px;
+        font-size: 20px;
         line-height: 1;
         font-weight: 600;
         margin: 0;
@@ -53,41 +54,14 @@
         margin-right: 6px;
     }
 
-    &__input {
+    &__input,
+    &__datepicker {
         border: none;
         outline: none;
         background: none;
         padding: 0;
         line-height: 1;
-        color: $text-tertiary;
-
-        &::-webkit-input-placeholder {
-            color: $text-tertiary;
-            opacity: 0.8;
-        }
-
-        &::-moz-placeholder {
-            color: $text-tertiary;
-            opacity: 0.8;
-        }
-
-        &:-ms-input-placeholder {
-            color: $text-tertiary;
-            opacity: 0.8;
-        }
-
-        &:-moz-placeholder {
-            color: $text-tertiary;
-            opacity: 0.8;
-        }
-    }
-
-    &__datepicker {
-        border: none;
-        background: none;
-        outline: none;
-        padding: 0;
-        font-size: 1rem;
+        font-size: 16px;
         color: $text-tertiary;
 
         &::-webkit-input-placeholder {
@@ -136,10 +110,23 @@
             }
 
             &--today {
+                border-radius: 0.3rem;
+                color: $white;
                 background: $brand-primary;
 
                 &:hover {
                     background: $text-quaternary;
+                }
+            }
+
+            &--selected,
+            &--keyboard-selected {
+                border-radius: 0.3rem;
+                color: $white;
+                background: $text-quaternary;
+
+                &:hover {
+                    background: $brand-primary;
                 }
             }
         }
@@ -147,5 +134,37 @@
 
     &__button {
         margin-left: 48px;
+    }
+
+    &__error {
+        color: red;
+        position: absolute;
+        top: 50px;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    &__modal {
+        &-title {
+            margin: 0 0 12px 0;
+            font-size: 28px;
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            font-size: 21px;
+            margin-top: 6px;
+        }
+
+        &-icon {
+            margin-right: 12px;
+            flex: none;
+        }
+
+        &-text {
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+        }
     }
 }

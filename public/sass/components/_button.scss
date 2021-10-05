@@ -38,16 +38,16 @@ $transition-delay: 250ms;
 
     &_size {
         &_small {
-            padding: 0.375rem 1.25rem;
-            font-size: 1.1875rem;
-            letter-spacing: -0.045rem;
-            border-radius: 1rem;
+            padding: 6px 20px;
+            font-size: 19px;
+            letter-spacing: -0.72px;
+            border-radius: 16px;
         }
 
         &_large {
-            padding: 1.25rem 2.25rem;
-            font-size: 1.3125rem;
-            border-radius: 0.625rem;
+            padding: 20px 36px;
+            font-size: 21px;
+            border-radius: 10px;
         }
     }
 

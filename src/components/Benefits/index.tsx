@@ -4,10 +4,18 @@ import classNames from 'classnames';
 import bemPreset from '../../utils/bemPreset';
 
 const Benefits: FunctionComponent = () => {
+    /**
+     * The BEM class name generator.
+     */
     const cn = withNaming(bemPreset)('benefits');
+
+    /**
+     * The component stylesheet.
+     */
     const styleSheet = classNames(
         cn(),
     );
+
     const benefits = [{
         title: 'Get Best Prices',
         description: 'Pay through our application and save thousands and get amazing rewards',
@@ -25,6 +33,7 @@ const Benefits: FunctionComponent = () => {
         description: 'Find the best hotels and places to visit near you in a single click',
         icon: '/travelo/images/nearby.svg',
     }];
+
     return (
         <div className={styleSheet}>
             {
