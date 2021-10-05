@@ -13,18 +13,18 @@
         align-items: center;
 
         font-family: 'Proxima Nova Alt', sans-serif;
-        font-size: 1.5rem;
+        font-size: 24px;
+        line-height: 36px;
         font-weight: 700;
-        line-height: 1.5em;
         text-align: center;
     }
 
     &__advice {
         font-family: 'Proxima Nova Alt', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.25em;
+        font-size: 16px;
+        line-height: 20px;
         text-align: center;
-        margin: 0.75em 0 0 0;
+        margin: 12px 0 0 0;
     }
 }
